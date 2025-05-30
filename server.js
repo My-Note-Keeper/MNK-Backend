@@ -1,9 +1,9 @@
 const http = require('http');
 const connectDB = require('./db');
 const handleNotes = require('./routes/notes');
+require('dotenv').config();
 const cors = require('cors');
 const url = require('url');
-
 connectDB();
 
 // CORS middleware function
